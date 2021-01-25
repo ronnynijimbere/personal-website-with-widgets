@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronny Nijimbere - Full Stack Web Developer</title>
+    <!-- Link our CSS stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <!-- Header content with avatar and basic info -->
+        <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+        <div class="header-coontent">
+            <h1>Hi 🖐<br />My name is Ronny Nijimbere</h1>
+            <div class="subtitle">
+                Full Stack Web Developer <span class="dot">•</span>
+                React.js and Python Coder <span class="dot">•</span>
+                Athletics enthusiast <span class="dot">•</span>
+                Durban, South Africa <span role="img" aria-label="South Africa">RSA</span>
+            </div>
+            <div class="contacts">
+                <a href="https://github.com/ronnynijimbere" target="_blank" rel="noopener noreferrer">
+                    <span class="icon">
+                        <img src="images/logo_github.svg" alt="GitHub" />
+                    </span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://profile.codersrank.io/user/ronnynijimbere" target="_blank" rel="noopener noreferrer">
+                    <span class="icon">
+                      <img src="images/logo_cr.svg" alt="CodersRank" />
+                    </span>
+                    <span>CodersRank</span>
+                </a>
+                <a href="https://twitter.com/MrNijimbere" target="_blank" rel="noopener noreferrer">
+                    <span class="icon">
+                      <img src="images/logo_twitter.svg" alt="Twitter" />
+                    </span>
+                    <span>Twitter</span>
+                  </a>    
+            </div>
+        </div>
+      </header>
+      <section>
+        <h2>My Coding Activity & Stats</h2>
+
+        <!-- Summary widget -->
+        <codersrank-summary
+        class="widget"
+        username="ronnynijimbere"
+        show-avatar="false"
+        show-header="false"
+        min-width="420"
+        branding="false"
+      ></codersrank-summary>
+
+        <!-- Activity widget -->
+
+        <div class="widget activity-widget">
+            <codersrank-activity
+              username="ronnynijimbere"
+              legend="false"
+              labels
+              tooltip
+              step="5"
+              svg-width="1120"
+              branding="false"
+            ></codersrank-activity>
+          </div>
+
+        <!-- Skills chart widget -->
+
+        <codersrank-skills-chart
+        class="widget"
+        username="ronnynijimbere"
+        legend="false"
+        tooltip
+        labels
+        skills="JavaScript,CSS,Less,React,Python,Express, Node, MongoDB, CSS,HTML"
+        svg-width="1120"
+        svg-height="400"
+        branding="false"
+      ></codersrank-skills-chart>
+      </section>
+      <section>
+        <h2>Recent Projects</h2>
+        <p>I am very passionate about building mobile and desktop web applications and user interfaces.</p>
+      <codersrank-portfolio
+        <!-- Portfolio widget -->
+
+        <codersrank-portfolio
+        class="widget"
+        username="ronnynijimbere"
+        grid
+        company="false"
+        branding="false"
+      ></codersrank-portfolio>
+      </section>
+      <section>
+        <h2>Work Experience & Education</h2>
+
+        <!-- Work experience widget -->
+        <codersrank-work-experience
+        class="widget"
+        username="ronnynijimbere"
+        logos
+        branding="false"
+      ></codersrank-work-experience>
+
+        <!-- Education widget -->
+        <codersrank-education
+        class="widget"
+        username="ronnynijimbere"
+        branding="false"
+      ></codersrank-education>
+      </section>
+
+      <footer>
+        <!-- Generic footer copy -->
+        Copyright © 2020 - 2021 Ronny Nijimbere
+      </footer>
+    </main>
+    <script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
+  </body>
+</html>
